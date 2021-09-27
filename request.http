@@ -1,0 +1,4 @@
+POST http://localhost:8083/fitness/some
+
+###
+GET http://localhost:8083/fitness

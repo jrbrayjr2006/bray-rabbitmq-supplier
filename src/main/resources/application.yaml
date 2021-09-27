@@ -1,0 +1,11 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    stream:
+      function:
+        definition: produceFitnessEvent
+      bindings:
+        produceFitnessEvent-out-0:
+          destination: fitness-events
