@@ -12,7 +12,7 @@ The purpose of this project is to provide a working example of Reactive Streams 
 The application can be run locally with RabbitMQ running in a Docker container.
 
 ```cmd
-docker run -d --name rabbit -h rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management`
+docker run -d --name rabbit -h rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 ```
 
 ### Cloud Foundry
