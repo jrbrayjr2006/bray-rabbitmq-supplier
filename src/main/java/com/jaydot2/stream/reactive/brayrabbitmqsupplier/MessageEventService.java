@@ -14,8 +14,8 @@ public class MessageEventService {
 
     private Sinks.Many<Message<String>> unicastProcessor = Sinks.many().unicast().onBackpressureBuffer();
 
-    public Flux<Message<String>> getProducer() {
-        return unicastProcessor.asFlux();
+    public Sinks.Many<Message<String>> getProducer() {
+        return unicastProcessor;
     }
 
     public void sendMessage(String fitnessMessage) {
