@@ -16,6 +16,8 @@ public class MessageEventHandler {
 
     public Mono<ServerResponse> sendDefaultMessage(ServerRequest serverRequest) {
 
+        messageEventService.sendMessage("fitness-success");
+
         return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON)
                 .body(BodyInserters.fromValue("{\"result\":\"ok\"}"));
     }
